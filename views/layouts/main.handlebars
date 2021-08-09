@@ -2,20 +2,45 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Iron Throne</title>
-  <link rel="stylesheet" type="text/css" href="/css/jass.css">
-  <link rel="stylesheet" type="text/css" href="/css/syle.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Iron Throne</title>
+    <link rel="stylesheet" type="text/css" href="/css/jass.css">
+    <link rel="stylesheet" type="text/css" href="/css/syle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 </head>
 
 <body>
-  <header>
-    <h1>The Iron Throne</h1>
-    <h3>A Quiz of Ice and Fire</h3>
-    <p>Take the quiz by answering a few quick questions. At the end we will reveal which character you are most similar to.  Good luck in the harsh lands of Westeros!
-    </p>
-  </header>
-
+    <section class="hero is-medium">
+        <div class="hero-body">
+            <p class="title">
+                The Iron Throne
+            </p>
+            <p class="subtitle">
+                A Quiz of Ice and Fire
+            </p>
+            <p class="is-size-6">
+                Login to take the quiz. At the end we will reveal which character you are most similar to.  Good luck in the harsh lands of Westeros!
+            </p>
+        </div>
+    </section>
+    <div class="columns">
+        
+        <div class="column is-one-third">
+            <a href="/">Home</a>
+            {{#if loggedIn}}
+            <button id="logout" class="btn-no-style">Logout</button>
+            {{else}}
+            <a href="/login">Login</a>
+            {{/if}}
+        </div>
+        
+        <div class="column is-two-thirds">{{{body}}}</div>
+    </div>
+    
+    {{#if loggedIn}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
+    
 </body>
 </html>
