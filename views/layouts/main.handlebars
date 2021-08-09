@@ -8,39 +8,47 @@
     <link rel="stylesheet" type="text/css" href="/css/jass.css">
     <link rel="stylesheet" type="text/css" href="/css/syle.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    
 </head>
 
 <body>
     <section class="hero is-medium">
         <div class="hero-body">
-            <p class="title">
+            <p class="title has-text-centered">
                 The Iron Throne
             </p>
-            <p class="subtitle">
+            <p class="subtitle has-text-centered">
                 A Quiz of Ice and Fire
             </p>
-            <p class="is-size-6">
+            <p class="is-size-6 has-text-centered">
                 Login to take the quiz. At the end we will reveal which character you are most similar to.  Good luck in the harsh lands of Westeros!
             </p>
         </div>
     </section>
-    <div class="columns">
+    <div class="columns" id="animation-bg">
         
         <div class="column is-one-third">
-            <a href="/">Home</a>
+            <a href="/" class="button is-white is-outlined">Home</a>
             {{#if loggedIn}}
-            <button id="logout" class="btn-no-style">Logout</button>
+            <button id="logout" class="button is-white is-outlined">Logout</button>
             {{else}}
-            <a href="/login">Login</a>
+            <a href="/login" class="button is-white is-outlined">Login</a>
             {{/if}}
         </div>
         
         <div class="column is-two-thirds">{{{body}}}</div>
     </div>
     
-    {{#if loggedIn}}
+    <script src="three.r119.min.js"></script>
+    <script src="vanta.fog.min.js"></script>
+    <script>
+        VANTA.FOG({ el: "#animation-bg", mouseControls: true, touchControls: true, gyroControls: false,
+        minHeight: 200.00, minWidth: 200.00, highlightColor: 0x5d9fff, midtoneColor: 0xff6e00, lowlightColor: 0x0, 
+        baseColor: 0x223924, blurFactor: 0.59, speed: 1.10 })
+    </script>
+
+{{#if loggedIn}}
     <script src="/js/logout.js"></script>
     {{/if}}
-    
 </body>
 </html>
