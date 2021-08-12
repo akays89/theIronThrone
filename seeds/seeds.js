@@ -7,13 +7,13 @@ const charData = require('./charData.json');
 const seedDatabase = async () => {
     await sequelize.sync({ force: true });
 
-    await User.bulkCreate(userData, {
+    const users = await User.bulkCreate(userData, {
       individualHooks: true,
       returning: true,
     });
 
-    await Character.bulkCreate(charData, {
-    individualHooks: true,
+    const characters = await Character.bulkCreate(charData, {
+    individualHooks: false,
     returning: true,
   });
 

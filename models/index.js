@@ -1,8 +1,12 @@
 const User = require('./User');
 const Character = require('./Character');
 
-Character.BelongsTo(User, {
-  foreignKey: 'char_num'
-});
+// User.hasOne(Character, {
+//   foreignKey: 'id'
+// });
+
+// Character.hasMany(User, {
+//   foreignKey: 'id'
+// });
 
 module.exports = { User, Character };

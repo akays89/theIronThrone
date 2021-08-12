@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-class Character extends Model, {}
+class Character extends Model {}
     
 
 Character.init(
@@ -19,11 +19,6 @@ Character.init(
      blurb: {
         type: DataTypes.STRING,
         allowNull: false,
-    },
-    char_num: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        autoIncrement: true,
     },
     img_link: {
         type: DataTypes.STRING,

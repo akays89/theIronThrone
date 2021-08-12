@@ -29,11 +29,11 @@ User.init(
     },
     last_saved_result: {
         type: DataTypes.INTEGER,
-        allowNull: true,
-        references: {
-            model: "Character",
-            key: "char_num",
-        },
+        allowNull: true
+        // references: {
+        //     model: "character",
+        //     key: "id",
+        // },
     },
   },
   {
@@ -42,13 +42,13 @@ User.init(
         newUserData.password = await bcrypt.hash(newUserData.password, 10);
         return newUserData;
       },
-      beforeUpdate: async (updatedUserData) => {
-        updatedUserData.password = await bcrypt.hash(
-          updatedUserData.password,
-          10
-        );
-        return updatedUserData;
-      },
+      // beforeUpdate: async (updatedUserData) => {
+      //   updatedUserData.password = await bcrypt.hash(
+      //     updatedUserData.password,
+      //     10
+      //   );
+      //   return updatedUserData;
+      
     },
     sequelize,
     timestamps: false,
