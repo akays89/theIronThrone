@@ -1,32 +1,32 @@
 [
     {
     "char_name": "Joeffrey",
-    "blurb": "Joffrey's cruelty and the decreased quality of life at King's Landing due to food shortages and other hardships make Joffrey an unpopular king, and he is nearly killed in a riot sparked by his temper.[53] Acting as his temporary Hand, only Tyrion stands up to Joffrey's authority, and the king develops a special hatred for his uncle. Tyrion, in return, holds his nephew in contempt, viewing him as a monster.",
+    "blurb": "Joffrey's cruelty and the decreased quality of life at King's Landing due to food shortages and other .",
     "img_link": "`<img src =./public/images/joffrey.jpg width = 550 height = 306>`"
     },
     {
     "char_name": "Arya Stark",
-    "blurb": "Introduced in 1996's A Game of Thrones, Arya is the third child and youngest daughter of Lord Ned Stark and his wife Lady Catelyn Stark. She is tomboyish, headstrong, feisty, independent, disdains traditional female pursuits, and is often mistaken for a boy.",
+    "blurb": "Introduced in 1996's A Game of Thrones, Arya is the third child and youngest daughter of Lord Ned Stark.",
     "img_link": "`<img src = ./public/images/arya-stark.jpg width = 550 height = 306>`"
     },
     {
     "char_name": "Jon Snow",
-    "blurb": "Knowing his prospects are limited by his status as a bastard, Jon joins the Night's Watch, who guard the far northern borders from the wildlings living beyond The Wall. In A Clash of Kings (1998), Jon joins a scouting party investigating the growing threat from the otherworldly 'Others' beyond the Wall, and infiltrates the wildlings. Jon learns of their plans to invade Westeros in A Storm of Swords (2000), and falls in love with the wildling woman Ygritte. Jon betrays the wildlings and Ygritte, returns to defend the Night's Watch against the wildlings' invasion, and elected Lord Commander of the Watch.",
+    "blurb": "Knowing his prospects are limited by his status as a bastard, Jon joins the Night's Watch, who guard the far northern borders from the wildlings living beyond The Wall.",
     "img_link": "`<img src = ./public/images/jon-snow.jpg width = 550 height = 306>`"
     } ,
     {
     "char_name": "Cersei Lannister",
-    "blurb": "Cersei is Queen of the Seven Kingdoms of Westeros by marriage to King Robert Baratheon. Her father, Tywin, arranged the marriage after his attempt to betroth her to Prince Rhaegar Targaryen, whom she idolized as a child, failed. Robert took the Throne with the help of the Lannisters when he ended the Targaryen dynasty. Cersei has been involved in an incestuous affair with her twin brother, Jaime, since childhood. All three of Cersei's children are Jaime's, which is unbeknownst to Robert, who abuses her throughout their marriage. The rumored illegitimacy of her children causes a power struggle in the wake of the king's death known as the War of Five Kings. Cersei's main character attributes are her lust for power, transgressive viewpoint, scheming, and her love for her children, whom she seeks to protect.",
+    "blurb": "Cersei is Queen of the Seven Kingdoms of Westeros by marriage to King Robert Baratheon.",
     "img_link": "`<img src = ./public/images/cersei-lannister.jpg width = 550 height = 306>`"
     },
     {
     "char_name": "Daenerys",
-    "blurb": "Daenerys adapts to life with the Dothraki, and her character emerges as strong, confident and courageous. She becomes the heir of the Targaryen dynasty after her brother's murder and plans to reclaim the Iron Throne herself, seeing it as her birthright. A pregnant Daenerys loses her husband and child, but soon helps to hatch three dragons from their eggs. The dragons provide her with a tactical advantage and prestige. She also acquires an army with which she conquers the cities of Yunkai, Astapor and Meereen, determined to end slavery and injustice. Despite her strong moral compass, she can deal ruthlessly with her enemies, particularly slave masters. She establishes herself as a powerful and relentless ruler.",
+    "blurb": "Daenerys adapts to life with the Dothraki, and her character emerges as strong, confident and courageous.",
     "img_link": "`<img src = ./public/images/daenerys.jpg width = 550 height = 306>`"
     },
     {
     "char_name": "Hodor",
-    "blurb": " Although his real name is Walder,[6] he is commonly called 'Hodor' because that is the only word he is capable of saying. He is over seven feet tall, and hinted to possibly have giant ancestry. He has a friendly, childlike disposition and possesses great physical strength, though he is too tamed and gentle to use it against others. After Bran Stark is crippled in A Game of Thrones, Hodor is tasked to carry him around in a sling on his back. When Winterfell is sacked and burnt, Hodor escapes north with Bran, Jojen, Meera, Rickon and Osha.",
+    "blurb": " Although his real name is Walder,[6] he is commonly called 'Hodor' because that is the only word he is capable of saying.",
     "img_link": "`<img src = ./public/images/hodor.jpg width = 550 height = 306>`"
     }        
 ]
