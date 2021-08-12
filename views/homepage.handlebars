@@ -1,29 +1,44 @@
 <div class="card" style="width: 100%;">
     <img src="./images/got-group.jpg" class="card-img-top w-10 h-10" alt="image" style="margin: auto;">
     <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">{{question}}</p>
     </div>
-    <div class="list-group has-text-left">
-        <label class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox" value="">
-            First checkbox
-        </label>
-        <label class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox" value="">
-            Second checkbox
-        </label>
-        <label class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox" value="">
-            Third checkbox
-        </label>
-        <label class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox" value="">
-            Fourth checkbox
-        </label>
-        <label class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox" value="">
-            Fifth checkbox
-        </label>
+    <div class="has-text-left" id="radio-questions">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                {{answer1}}
+            </label>
         </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                {{answer2}}
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                {{answer3}}
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                {{answer4}}
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                {{answer5}}
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                {{answer6}}
+            </label>
+        </div>
+    </div>
 </div>
