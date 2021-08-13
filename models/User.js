@@ -27,6 +27,7 @@ User.init(
         len: [8],
       },
     },
+   fk_user_character_id
     last_saved_result: {
         type: DataTypes.INTEGER,
         allowNull: true

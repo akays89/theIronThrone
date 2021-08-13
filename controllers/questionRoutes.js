@@ -1,4 +1,4 @@
-var quiz = {
+const quiz = {
     
 
     questions: [{
