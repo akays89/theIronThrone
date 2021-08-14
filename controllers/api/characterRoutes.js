@@ -3,7 +3,7 @@ const { Character } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // GET one result for quiz
-router.get('/results/:id', async (req, res) => {
+router.get('/results/:id', withAuth, async (req, res) => {
   try {
     const charResults = await Character.findByPk(req.params.id, {
       include: [
@@ -21,7 +21,7 @@ router.get('/results/:id', async (req, res) => {
   }
 });
 
-
+module.exports = router;
 
 
 
