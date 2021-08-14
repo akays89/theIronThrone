@@ -24,19 +24,19 @@ const responses = [];
 // };
 
 // GET questions
-router.get('/', async (req, res) => {
-    try {
+// router.get('/', async (req, res) => {
+//     try {
   
-      const questions = questData.map((question) =>
-        question.get({ plain: true })
-      );
-      res.render('questions', {
-        questions,
-        loggedIn: req.session.loggedIn,
-      });
-    } catch (err) {
-      console.log(err);
-      res.status(500).json(err);
-    }
-    console.log(questions);
-  });
+//       const questions = questData.map((question) =>
+//         question.get({ plain: true })
+//       );
+//       res.render('questions', {
+//         questions,
+//         loggedIn: req.session.loggedIn,
+//       });
+//     } catch (err) {
+//       console.log(err);
+//       res.status(500).json(err);
+//     }
+//     console.log(questions);
+//   });
