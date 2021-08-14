@@ -1,7 +1,8 @@
 const router = require('express').Router();
 const { Character } = require('../../models');
 const withAuth = require('../../utils/auth');
-const resultsData = require('../seeds/resultsData.json');
+//const resultsData = require('../seeds/resultsData.json');
+
 
 // GET one result for quiz
 router.get('/results/:id', withAuth, async (req, res) => {
@@ -21,6 +22,8 @@ router.get('/results/:id', withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+
 
 module.exports = router;
 
