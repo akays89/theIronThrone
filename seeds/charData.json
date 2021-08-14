@@ -1,32 +1,32 @@
 [
     {
-    "char_name": "Joeffrey",
+    "char_name": "Joffrey",
     "blurb": "Joffrey's cruelty and the decreased quality of life at King's Landing due to food shortages and other .",
-    "img_link": "`<img src =./public/images/joffrey.jpg width = 550 height = 306>`"
+    "img_link": "`<img src =./images/joffrey.jpg width = 550 height = 306>`"
     },
     {
     "char_name": "Arya Stark",
     "blurb": "Introduced in 1996's A Game of Thrones, Arya is the third child and youngest daughter of Lord Ned Stark.",
-    "img_link": "`<img src = ./public/images/arya-stark.jpg width = 550 height = 306>`"
+    "img_link": "`<img src = ./images/arya-stark.jpg width = 550 height = 306>`"
     },
     {
     "char_name": "Jon Snow",
     "blurb": "Knowing his prospects are limited by his status as a bastard, Jon joins the Night's Watch, who guard the far northern borders from the wildlings living beyond The Wall.",
-    "img_link": "`<img src = ./public/images/jon-snow.jpg width = 550 height = 306>`"
+    "img_link": "`<img src = ./images/jon-snow.jpg width = 550 height = 306>`"
     } ,
     {
     "char_name": "Cersei Lannister",
     "blurb": "Cersei is Queen of the Seven Kingdoms of Westeros by marriage to King Robert Baratheon.",
-    "img_link": "`<img src = ./public/images/cersei-lannister.jpg width = 550 height = 306>`"
+    "img_link": "`<img src = ./images/cersei-lannister.jpg width = 550 height = 306>`"
     },
     {
     "char_name": "Daenerys",
     "blurb": "Daenerys adapts to life with the Dothraki, and her character emerges as strong, confident and courageous.",
-    "img_link": "`<img src = ./public/images/daenerys.jpg width = 550 height = 306>`"
+    "img_link": "`<img src = ./images/daenerys.jpg width = 550 height = 306>`"
     },
     {
     "char_name": "Hodor",
     "blurb": " Although his real name is Walder,[6] he is commonly called 'Hodor' because that is the only word he is capable of saying.",
-    "img_link": "`<img src = ./public/images/hodor.jpg width = 550 height = 306>`"
+    "img_link": "`<img src = ./images/hodor.jpg width = 550 height = 306>`"
     }        
 ]
