@@ -1,0 +1,30 @@
+{{#if loggedIn}}
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link fs-6 link-light" aria-current="page" href="#">Logout</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fs-6 link-light" aria-current="page" href="#">Home</a>
+            </li>
+        </ul>
+        
+        {{else}}
+        <form class="row g-3">
+            <div class="col-auto">
+            <label for="inputUser" class="visually-hidden">Username</label>
+            <input type="text" class="form-control" id="inputUser" placeholder="username">
+            </div>
+            <div class="col-auto">
+            <label for="inputPassword" class="visually-hidden">Password</label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+            <div class="col-auto">
+            <button type="submit" class="btn btn-secondary mb-3" id="signUp">Sign Up</button>
+            </div>
+            <div class="col-auto">
+            <button type="submit" class="btn btn-secondary mb-3" id="logIn">Log In</button>
+            </div>
+        </form>
+    </div>
+{{/if}}

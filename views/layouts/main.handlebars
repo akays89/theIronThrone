@@ -18,33 +18,7 @@
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                               </button>
-                            {{#if loggedIn}}
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link fs-6 link-light" aria-current="page" href="#">Logout</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link fs-6 link-light" aria-current="page" href="#">Home</a>
-                                </li>
-                            </ul>
-                            
-                            {{else}}
-                            <form class="row g-3">
-                                <div class="col-auto">
-                                <label for="inputEmail2" class="visually-hidden">Email</label>
-                                <input type="email" class="form-control" id="inputEmail2" placeholder="email@example.com">
-                                </div>
-                                <div class="col-auto">
-                                <label for="inputPassword2" class="visually-hidden">Password</label>
-                                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
-                                </div>
-                                <div class="col-auto">
-                                <button type="submit" class="btn btn-secondary mb-3">Log In</button>
-                                </div>
-                            </form>
-                        </div>
-                            {{/if}}
+                            {{{login}}}
                         </div>
                     </nav>
                     <div class="container">
@@ -60,6 +34,9 @@
                                 <p class="p-3 mb-2 bg-dark bg-opacity-75">
                                     Login to take the quiz. At the end we will reveal which character you are most similar to. Good luck in the harsh lands of Westeros!
                                 </p>
+                                {{#if !LoggedIn }}
+                                <button class="btn btn-secondary" type="submit">Start Quiz</button>
+                                {{/if}}
                             </div>
                         </div>
                     </div>
