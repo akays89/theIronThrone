@@ -1,5 +1,6 @@
 [{
     "text": "Pick your ideal living situation",
+    "quest_img": "`<img src = ./public/images/question1.jpg width = 550 height = 306>`",
     "responses": [{
             "answer": "In the City",
             "value": "Cersei"
@@ -27,6 +28,7 @@
 },
 {
     "text": "How close are you to your siblings?",
+    "quest_img": "`<img src = ./public/images/question2.jpg width = 550 height = 306>`",
     "responses": [{
             "answer": "Incestuous",
             "value": "Cersei"
@@ -55,6 +57,7 @@
 },
 {
     "text": "Pick your ideal pet.",
+    "quest_img": "`<img src = ./public/images/question3.jpg width = 550 height = 306>`",
     "responses": [{
             "answer": "Horse",
             "value": "Cersei"
@@ -83,6 +86,7 @@
 },
 {
     "text": "How badass are you?",
+    "quest_img": "`<img src = ./public/images/question4.jpg width = 550 height = 306>`",
     "responses": [{
             "answer": "Completely insufferable",
             "value": "Cersei"
@@ -111,6 +115,7 @@
 },
 {
     "text": "What is your weapon of choice?",
+    "quest_img": "`<img src = ./public/images/question5.jpg width = 550 height = 306>`",
     "responses": [{
             "answer": "Wildfire",
             "value": "Cersei"
@@ -139,6 +144,7 @@
 },
 {
     "text": "What type of family do you come from?",
+    "quest_img": "`<img src = ./public/images/question6.jpg width = 550 height = 306>`",
     "responses": [{
             "answer": "Old money",
             "value": "Cersei"
