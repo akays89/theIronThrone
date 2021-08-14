@@ -1,8 +1,8 @@
 <div class="card" style="width: 100%;">
-    <img src="{{img_link}}" class="card-img-top w-10 h-10" alt="image" style="margin: auto;">
+    <img src="{{result.character.img_link}}" class="card-img-top w-10 h-10" alt="image" style="margin: auto;">
     <div class="card-body">
-        <h5 class="card-title">You are {{char_name}}!</h5>
-    <p class="card-text">{{blurb}}</p>
+        <h5 class="card-title">You are {{result.character.char_name}}!</h5>
+    <p class="card-text">{{result.character.blurb}}</p>
     <a href="./leaderboard" class="btn btn-secondary">Post Your Results</a>
   </div>
 </div>
