@@ -1,42 +1,24 @@
 const questData = require('../seeds/questionsData.json');
+const withAuth = require('../utils/auth');
+const { Question, Answer } = require('../models');
 const router = require('express').Router();
 
-// Pulls just the first question
-const quest1 = questData[0].text;
-// Pulls first answer
-const answer = questData[0].responses[0].answer;
-// Pulls the first answer's value
-const answerValue = questData[0].responses[0].value;
+// This route works! yay. 
+// I had to remove the withAuth for insomnia and put in async await. 
+router.get('/:id', async (req, res) => {
+    try {
+      const question = await Question.findByPk(req.params.id, {
+          // include: [Answer],
+      });
+      // res.render('questions', {
+      //   question: question,
+      //   loggedIn: req.session.logged_in,
+      // });
+      res.status(200).json(question);
+    } catch (err) {
+      console.log(err);
+      res.status(500).json(err);
+    }
+  });
 
-const responses = [];
-
-
-// Pulls each question and the list of answers
-// for (let i = 0; i < questData.length; i++) {
-//     const questions = questData[i].text;
-//     console.log(questions);
-
-//     for (let t = 0; t < questData[i].responses.length; t++) {
-//         const answers = questData[i].responses[t].answer;
-//         console.log(answers);
-//     }
-//     return;
-// };
-
-// GET questions
-// router.get('/', async (req, res) => {
-//     try {
-  
-//       const questions = questData.map((question) =>
-//         question.get({ plain: true })
-//       );
-//       res.render('questions', {
-//         questions,
-//         loggedIn: req.session.loggedIn,
-//       });
-//     } catch (err) {
-//       console.log(err);
-//       res.status(500).json(err);
-//     }
-//     console.log(questions);
-//   });
+module.exports = router;

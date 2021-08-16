@@ -1,30 +1,36 @@
 [
     {
+    "id": "1",
     "char_name": "Joffrey",
     "blurb": "Joffrey is spoiled, arrogant, cowardly, childish and sadistic, though he tends to hide these traits before his ascension, appearing to be the typical charming heir to Seven Kingdoms.",
     "img_link": "./images/joffrey.jpg"
     },
     {
+    "id": "2",
     "char_name": "Arya Stark",
     "blurb": "Arya rejects the notion that she must become a lady and marry for influence and power. Instead, she believes that she can forge her own destiny.",
     "img_link": "./images/arya-stark.jpg"
     },
     {
+    "id": "3",
     "char_name": "Jon Snow",
     "blurb": "Knowing his prospects are limited by his status as a bastard, Jon joins the Night's Watch, who guard the far northern borders from the wildlings living beyond The Wall.",
     "img_link": "./images/jon-snow.jpg"
     } ,
     {
+    "id": "4",
     "char_name": "Cersei Lannister",
     "blurb": "Cersei, the Queen of the Seven Kingdoms by marriage, is considered one of the most complex characters in the realm. She possesses a lust for power, transgressive viewpoint, scheming, and her love for her children, whom she seeks to protect at all costs.",
     "img_link": "./images/cersei-lannister.jpg"
     },
     {
+    "id": "5",
     "char_name": "Daenerys",
     "blurb": "Daenerys, The Mother of Dragons, dreams of finding a peaceful home and a place to belong to. Despite her strong moral compass, she can deal ruthlessly with her enemies. She establishes herself as a powerful and relentless ruler.",
     "img_link": "./images/daenerys.jpg"
     },
     {
+    "id": "6",
     "char_name": "Hodor",
     "blurb": " Although his real name is Walder, he is commonly called 'Hodor' because that is the only word he is capable of saying.",
     "img_link": "./images/hodor.jpg"

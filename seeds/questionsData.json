@@ -1,180 +1,31 @@
 [{
     "id": "1",
-    "text": "Pick your ideal living situation",
-    "quest_img": "./images/question1.jpg",
-    "responses": [{
-            "answer": "In the City",
-            "value": "Cersei"
-        },
-        {
-            "answer": "In the North",
-            "value": "Arya"
-        },
-        {
-            "answer": "With your parents",
-            "value": "Joffrey"
-        },
-        {
-            "answer": "In exile",
-            "value": "Daenerys"
-        },
-            {
-                "answer": "Hodor",
-                "value": "Hodor"
-            }
-        
-
-
-    ]
+    "question": "Pick your ideal living situation:",
+    "quest_img": "./images/question1.jpg"
 },
 {
     "id": "2",
-    "text": "How close are you to your siblings?",
-    "quest_img": "./images/question2.jpg",
-    "responses": [{
-            "answer": "Incestuous",
-            "value": "Cersei"
-        },
-        {
-            "answer": "They are my tribe",
-            "value": "Arya"
-        },
-        {
-            "answer": "My friends are my family",
-            "value": "Jon"
-        },
-        {
-            "answer": "Estranged",
-            "value": "Joffrey"
-        },
-        {
-            "answer": "They are my enemy",
-            "value": "Daenerys"
-        },
-        {
-            "answer": "Hodor",
-            "value": "Hodor"
-        }
-    ]
+    "question": "How close are you to your siblings?",
+    "quest_img": "./images/question2.jpg"
 },
 {
     "id": "3",
-    "text": "Pick your ideal pet.",
-    "quest_img": "./images/question3.jpg",
-    "responses": [{
-            "answer": "Horse",
-            "value": "Cersei"
-        },
-        {
-            "answer": "Dire-wolf",
-            "value": "Arya"
-        },
-        {
-            "answer": "A spirit animal",
-            "value": "Jon"
-        },
-        {
-            "answer": "I dont like pets",
-            "value": "Joffrey"
-        },
-        {
-            "answer": "Dragon",
-            "value": "Daenerys"
-        },
-        {
-            "answer": "Hodor",
-            "value": "Hodor"
-        }
-    ]
+    "question": "Pick your ideal pet:",
+    "quest_img": "./images/question3.jpg"
 },
 {
     "id": "4",
-    "text": "How badass are you?",
-    "quest_img": "./images/question4.jpg",
-    "responses": [{
-            "answer": "Completely insufferable",
-            "value": "Cersei"
-        },
-        {
-            "answer": "Stealthy",
-            "value": "Arya"
-        },
-        {
-            "answer": "Unafraid of death",
-            "value": "Jon"
-        },
-        {
-            "answer": "I want my mommy",
-            "value": "Joffrey"
-        },
-        {
-            "answer": "Pyromaniac",
-            "value": "Daenerys"
-        },
-        {
-            "answer": "Hodor",
-            "value": "Hodor"
-        }
-    ]
+    "question": "How badass are you?",
+    "quest_img": "./images/question4.jpg"
 },
 {
     "id": "5",
-    "text": "What is your weapon of choice?",
-    "quest_img": "./images/question5.jpg",
-    "responses": [{
-            "answer": "Wildfire",
-            "value": "Cersei"
-        },
-        {
-            "answer": "Needle",
-            "value": "Arya"
-        },
-        {
-            "answer": "Sword",
-            "value": "Jon"
-        },
-        {
-            "answer": "Mommy",
-            "value": "Joffrey"
-        },
-        {
-            "answer": "Dragon",
-            "value": "Daenerys"
-        },
-        {
-            "answer": "Hodor",
-            "value": "Hodor"
-        }
-    ]
+    "question": "What is your weapon of choice?",
+    "quest_img": "./images/question5.jpg"
 },
 {
     "id": "6",
-    "text": "What type of family do you come from?",
-    "quest_img": "./images/question6.jpg",
-    "responses": [{
-            "answer": "Old money",
-            "value": "Cersei"
-        },
-        {
-            "answer": "Wardens of the north",
-            "value": "Arya"
-        },
-        {
-            "answer": "I walk alone",
-            "value": "Jon"
-        },
-        {
-            "answer": "Toxic",
-            "value": "Joffrey"
-        },
-        {
-            "answer": "The bloodline is pure",
-            "value": "Daenerys"
-        },
-        {
-            "answer": "Hodor",
-            "value": "Hodor"
-        }
-    ]
+    "question": "What type of family do you come from?",
+    "quest_img": "./images/question6.jpg"
 }
 ]
