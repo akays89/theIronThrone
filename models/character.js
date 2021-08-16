@@ -17,7 +17,7 @@ Character.init(
       allowNull: false,
     },
      blurb: {
-        type: DataTypes.TEXT,
+        type: DataTypes.STRING,
         allowNull: false,
     },
     img_link: {
