@@ -1,10 +1,9 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-class Character extends Model {}
-    
+class Result extends Model {}
 
-Character.init(
+Result.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -12,26 +11,32 @@ Character.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    char_name: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-     blurb: {
-        type: DataTypes.TEXT,
-        allowNull: false,
-    },
-    img_link: {
+    result_char: {
         type: DataTypes.STRING,
         allowNull: false,
-  },
+    },
+    user_id: {
+        type: DataTypes.INTEGER,
+        references: {
+            model: 'user',
+            key: 'id'
+        }
+    } ,
+    character_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'character',
+        key: 'id'
+      }
+    }
 },
 {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "character",
+    modelName: "result",
   }
 );
 
-module.exports = Character;
+module.exports = Result;

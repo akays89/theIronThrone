@@ -22,22 +22,7 @@ router.get('/', async (req, res) => {
   
 });
 
-router.get('/:id', withAuth, (req, res) => {
-  try {
-    const id = req.params.question.id;
-    const question = questData.find((question) => question.id === id);
-    res.status(200).send(question);
 
-    res.render('questions', {
-      questions: questData,
-      loggedIn: req.session.logged_in,
-    });
-    console.log(question);
-
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
   
 
 // replace questions with homepage route
