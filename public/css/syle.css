@@ -27,10 +27,11 @@ body {
   }
 
 #throne-bg {
-    background-image: url(./images/iron-throne.png);
+    background-image: url(/images/iron-throne.png);
     background-size: cover;
     position: fixed;
     z-index: 20;
+    width: 100%;
 }
 
 #subhead {
