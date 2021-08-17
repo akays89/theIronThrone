@@ -33,9 +33,15 @@ app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 app.use(express.json());
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
+
+app.get('/', (req, res) => {
+  //Serves the body of the page aka "main.handlebars" 
+  res.render('main');
+  });
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () =>
