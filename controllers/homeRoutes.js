@@ -2,7 +2,6 @@ const { User, Question, Answer } = require('../models');
 const withAuth = require('../utils/auth');
 const questData = require('../seeds/questionsData.json');
 const router = require('express').Router();
-const app = express();
 
 
 // TEST: Get all questions for homepage
