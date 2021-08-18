@@ -30,17 +30,27 @@
                                 </ul>
                                 
                                 {{else}}
-                                <form class="row g-3">
+                                <form class="row g-3" style="float: left;" id="signup-form">
                                     <div class="col-auto">
-                                    <label for="inputUser" class="visually-hidden">Username</label>
-                                    <input type="text" class="form-control" id="inputUser" placeholder="username">
+                                    <label for="name-signup" class="visually-hidden">Username</label>
+                                    <input type="text" class="form-control" id="name-signup" placeholder="username">
                                     </div>
                                     <div class="col-auto">
-                                    <label for="inputPassword" class="visually-hidden">Password</label>
-                                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                                    <label for="password-signup" class="visually-hidden">Password</label>
+                                    <input type="password" class="form-control" id="password-signup" placeholder="Password">
                                     </div>
                                     <div class="col-auto">
                                     <button type="submit" class="btn btn-secondary mb-3" id="signUp">Sign Up</button>
+                                    </div>
+                                </form>
+                                <form class="row g-3" style="float: right;" id="login-form">
+                                    <div class="col-auto">
+                                    <label for="user-login" class="visually-hidden">Username</label>
+                                    <input type="text" class="form-control" id="user-login" placeholder="username">
+                                    </div>
+                                    <div class="col-auto">
+                                    <label for="password-login" class="visually-hidden">Password</label>
+                                    <input type="password" class="form-control" id="password-login" placeholder="Password">
                                     </div>
                                     <div class="col-auto">
                                     <button type="submit" class="btn btn-secondary mb-3" id="logIn">Log In</button>
