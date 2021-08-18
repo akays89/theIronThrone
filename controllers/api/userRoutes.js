@@ -1,12 +1,14 @@
 const router = require('express').Router();
 const { User } = require('../../models');
+const bcrypt = require('bcrypt');
 
 router.post('/', async (req, res) => {
   try {
     const userData = await User.create(req.body);
 
     req.session.save(() => {
-      req.session.user_id = userData.id;
+      req.session.user_id = req.body.user;
+      req.session.password = req.body.password;
       req.session.logged_in = true;
 
       res.status(200).json(userData);
@@ -18,7 +20,7 @@ router.post('/', async (req, res) => {
 
 router.post('/login', async (req, res) => {
   try {
-    const userData = await User.findOne({ where: { email: req.body.email } });
+    const userData = await User.findOne({ where: { user: req.body.user } });
 
     if (!userData) {
       res
@@ -35,7 +37,7 @@ router.post('/login', async (req, res) => {
         .json({ message: 'Incorrect Username or password, please try again' });
       return;
     }
-
+  
     req.session.save(() => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;

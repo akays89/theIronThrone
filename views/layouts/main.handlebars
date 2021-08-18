@@ -5,51 +5,57 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Iron Throne</title>
-    <link rel="stylesheet" type="text/css" href="./css/jass.css">
-    <link rel="stylesheet" type="text/css" href="./css/syle.css">
+    <link rel="stylesheet" type="text/css" href="/css/jass.css">
+    <link rel="stylesheet" type="text/css" href="/css/syle.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     
 </head>
 <body>
     <div id="animation-bg" class="vh-100">
         <div id="throne-bg" class="vh-100">
-                    <nav class="navbar-expand-lg navbar-dark bg-dark fs-3 pt-3">
+                    <nav class="navbar-expand-lg navbar-dark bg-dark fs-3 pt-3" id="navigation">
                         <div class="container-fluid">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                               </button>
-                            {{#if loggedIn}}
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link fs-6 link-light" aria-current="page" href="#">Logout</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link fs-6 link-light" aria-current="page" href="#">Home</a>
-                                </li>
-                            </ul>
-                            
-                            {{else}}
-                            <form class="row g-3">
-                                <div class="col-auto">
-                                <label for="inputEmail2" class="visually-hidden">Email</label>
-                                <input type="email" class="form-control" id="inputEmail2" placeholder="email@example.com">
-                                </div>
-                                <div class="col-auto">
-                                <label for="inputPassword2" class="visually-hidden">Password</label>
-                                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
-                                </div>
-                                <div class="col-auto">
-                                <button type="submit" class="btn btn-secondary mb-3">Log In</button>
-                                </div>
-                            </form>
-                        </div>
-                            {{/if}}
+                                {{#if loggedIn}}
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+                                    <li class="nav-item">
+                                        <a class="nav-link fs-6 link-light" aria-current="page" id="home" href="/">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link fs-6 link-light" aria-current="page" id="logOut" href="#">Logout</a>
+                                    </li>
+                                </ul>
+                                
+                                {{else}}
+                                
+                                <form class="row g-3" style="float: right;" id="login-form">
+                                    <div class="col-auto">
+                                    <label for="user-login" class="visually-hidden">Username</label>
+                                    <input type="text" class="form-control" id="user-login" placeholder="username">
+                                    </div>
+                                    <div class="col-auto">
+                                    <label for="password-login" class="visually-hidden">Password</label>
+                                    <input type="password" class="form-control" id="password-login" placeholder="Password">
+                                    </div>
+                                    <div class="col-auto">
+                                    <button type="submit" class="btn btn-secondary mb-3" id="logIn">Log In</button>
+                                    </div>
+                                    <div class="col-auto">
+                                    <button type="submit" class="btn btn-secondary mb-3" id="signUp">Sign Up</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        {{/if}}
                         </div>
                     </nav>
-                    <div class="container">
+                    <div class="container" id="main-cont">
                         <div class="row d-flex justify-content-center">
-                            <div class="col-6 mt-5 text-white text-center">
+                            <div class="col-8 mt-5 text-white text-center">
                                 <p id="the">the</p>
                                 <p id="headline">
                                    Iron Throne
@@ -58,32 +64,32 @@
                                     A Quiz of Ice and Fire
                                 </p>
                                 <p class="p-3 mb-2 bg-dark bg-opacity-75">
-                                    Login to take the quiz. At the end we will reveal which character you are most similar to. Good luck in the harsh lands of Westeros!
-                                </p>
+                                    <strong>Login to take the quiz.</strong> At the end we will reveal which character you are most similar to. Good luck in the harsh lands of Westeros!
+                                </p> 
                             </div>
                         </div>
                     </div>
                 
-                    <div class="container mb-5">
+                    <div class="container mb-5" id="body-cont">
                         <div class="row d-flex justify-content-center">
-                            <div class="col-6 text-center">
+                            <div class="col-8 text-center">
                                 {{{body}}}
                         </div>
                     </div>
-                
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
-                <script> 
-                    VANTA.FOG({ el: "#animation-bg", mouseControls: true, touchControls: true, gyroControls: false,
-                    minHeight: 200.00, minWidth: 200.00, highlightColor: 0x5d9fff, midtoneColor: 0xff6e00, lowlightColor: 0x0, 
-                    baseColor: 0x223924, blurFactor: 0.59, speed: 1.10 })
-                </script>
-
+                 </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+        <script> 
+            VANTA.FOG({ el: "#animation-bg", mouseControls: true, touchControls: true, gyroControls: false,
+            minHeight: 200.00, minWidth: 200.00, highlightColor: 0x5d9fff, midtoneColor: 0xff6e00, lowlightColor: 0x0, 
+            baseColor: 0x223924, blurFactor: 0.59, speed: 1.10 })
+        </script>
+        <script src="/js/login.js">
+        </script>
         {{#if loggedIn}}
         <script src="/js/logout.js"></script>
         {{/if}} 
-    </div>
-    </div>
-    </div>
 </body>
 </html>

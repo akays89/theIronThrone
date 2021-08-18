@@ -1,0 +1,31 @@
+[{
+    "id": "1",
+    "question": "Pick your ideal living situation:",
+    "quest_img": "/images/question1.jpg"
+},
+{
+    "id": "2",
+    "question": "How close are you to your siblings?",
+    "quest_img": "/images/question2.jpg"
+},
+{
+    "id": "3",
+    "question": "Pick your ideal pet:",
+    "quest_img": "/images/question3.jpg"
+},
+{
+    "id": "4",
+    "question": "How badass are you?",
+    "quest_img": "/images/question4.jpg"
+},
+{
+    "id": "5",
+    "question": "What is your weapon of choice?",
+    "quest_img": "/images/question5.jpg"
+},
+{
+    "id": "6",
+    "question": "What type of family do you come from?",
+    "quest_img": "/images/question6.jpg"
+}
+]

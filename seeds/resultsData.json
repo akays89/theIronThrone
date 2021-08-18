@@ -1,0 +1,38 @@
+[
+{
+    "id": "1",
+    "user_id": "3",
+    "result_char": "Jon Snow",
+    "character_id": "3"
+},
+{
+    "id": "2",
+    "user_id": "2",
+    "result_char": "Arya Stark",
+    "character_id": "2"
+},
+{
+    "id": "3",
+    "user_id": "1",
+    "result_char": "Joffrey",
+    "character_id": "1"
+},
+{
+    "id": "4",
+    "user_id": "2",
+    "result_char": "Cersei",
+    "character_id": "4"
+},
+{
+    "id": "6",
+    "user_id": "3",
+    "result_char": "Hodor",
+    "character_id": "6"
+},
+{
+    "id": "5",
+    "user_id": "1",
+    "result_char": "Daenerys",
+    "character_id": "5"
+}
+]

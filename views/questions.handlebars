@@ -1,0 +1,25 @@
+<div class="card" style="width: 100%;">
+    <img src="{{quest_img}}" class="card-img-top w-10 h-10" alt="image" style="margin: auto; width:550px; height:306px;">
+    <div class="card-body">
+        <p class="card-text">{{question}}</p>
+    </div>
+    <div class="has-text-left mb-3" id="radio-questions">
+    {{#each answers}}
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id={{response.id}}>
+            <label class="form-check-label" for="flexRadioDefault1">
+                {{answer}}
+            </label>
+        </div>
+    {{/each}}
+    </div>
+</div>
+
+{{!-- 
+    1. This may need to be `uestion.handlebars`. it will receive a single question form teh controlelr
+    2. Client-side JS - listen for `document.querySelector("#radio-questions").addEventListener('change', e => 
+        // TODO: Use location.replace(http://locahost:3001/questions/${e.target.id + 1}
+    ) 
+    3. Uplodate localstore
+    4. Router receives this GET request and send the next question
+ --}}

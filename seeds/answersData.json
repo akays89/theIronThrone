@@ -1,0 +1,177 @@
+[{
+    "answer": "In the City",
+    "question_id": "1",
+    "value": "Cersei"
+},
+{
+    "answer": "In the North",
+    "question_id": "1",
+    "value": "Arya"
+},
+{
+    "answer": "With your parents",
+    "question_id": "1",
+    "value": "Joffrey"
+},
+{
+    "answer": "In exile",
+    "question_id": "1",
+    "value": "Daenerys"
+},
+{
+    "answer": "Hodor",
+    "question_id": "1",
+    "value": "Hodor"
+},
+{
+    "answer": "Incestuous",
+    "question_id": "2",
+    "value": "Cersei"
+},
+{
+    "answer": "They are my tribe",
+    "question_id": "2",
+    "value": "Arya"
+},
+{
+    "answer": "My friends are my family",
+    "question_id": "2",
+    "value": "Jon"
+},
+{
+    "answer": "Estranged",
+    "question_id": "2",
+    "value": "Joffrey"
+},
+{
+    "answer": "They are my enemy",
+    "question_id": "2",
+    "value": "Daenerys"
+},
+{
+    "answer": "Hodor",
+    "question_id": "2",
+    "value": "Hodor"
+},
+{
+    "answer": "Horse",
+    "question_id": "3",
+    "value": "Cersei"
+},
+{
+    "answer": "Dire-wolf",
+    "question_id": "3",
+    "value": "Arya"
+},
+{
+    "answer": "A spirit animal",
+    "question_id": "3",
+    "value": "Jon"
+},
+{
+    "answer": "I dont like pets",
+    "question_id": "3",
+    "value": "Joffrey"
+},
+{
+    "answer": "Dragon",
+    "question_id": "3",
+    "value": "Daenerys"
+},
+{
+    "answer": "Hodor",
+    "question_id": "3",
+    "value": "Hodor"
+},
+{
+    "answer": "Completely insufferable",
+    "question_id": "4",
+    "value": "Cersei"
+},
+{
+    "answer": "Stealthy",
+    "question_id": "4",
+    "value": "Arya"
+},
+{
+    "answer": "Unafraid of death",
+    "question_id": "4",
+    "value": "Jon"
+},
+{
+    "answer": "I want my mommy",
+    "question_id": "4",
+    "value": "Joffrey"
+},
+{
+    "answer": "Pyromaniac",
+    "question_id": "4",
+    "value": "Daenerys"
+},
+{
+    "answer": "Hodor",
+    "question_id": "4",
+    "value": "Hodor"
+},
+{
+    "answer": "Wildfire",
+    "question_id": "5",
+    "value": "Cersei"
+},
+{
+    "answer": "Needle",
+    "question_id": "5",
+    "value": "Arya"
+},
+{
+    "answer": "Sword",
+    "question_id": "5",
+    "value": "Jon"
+},
+{
+    "answer": "Mommy",
+    "question_id": "5",
+    "value": "Joffrey"
+},
+{
+    "answer": "Dragon",
+    "question_id": "5",
+    "value": "Daenerys"
+},
+{
+    "answer": "Hodor",
+    "question_id": "5",
+    "value": "Hodor"
+},
+{
+    "answer": "Old money",
+    "question_id": "6",
+    "value": "Cersei"
+},
+{
+    "answer": "Wardens of the north",
+    "question_id": "6",
+    "value": "Arya"
+},
+{
+    "answer": "I walk alone",
+    "question_id": "6",
+    "value": "Jon"
+},
+{
+    "answer": "Toxic",
+    "question_id": "6",
+    "value": "Joffrey"
+},
+{
+    "answer": "The bloodline is pure",
+    "question_id": "6",
+    "value": "Daenerys"
+},
+{
+    "answer": "Hodor",
+    "question_id": "6",
+    "value": "Hodor"
+}
+
+]

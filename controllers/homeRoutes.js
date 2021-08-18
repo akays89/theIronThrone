@@ -1,79 +1,31 @@
-const router = require('express').Router();
-const { Character, User } = require('../models');
+const { User, Question, Answer } = require('../models');
 const withAuth = require('../utils/auth');
+const questData = require('../seeds/questionsData.json');
+const router = require('express').Router();
 
-router.get('/', async (req, res) => {
+router.get('/', (req, res) => {
+  //Serves the body of the page aka "main.handlebars" 
+  res.render('blank', { loggedIn: req.session.logged_in});
+  });
+
+
+// This route works! yay. 
+// I had to remove the withAuth for insomnia and put in async await. 
+router.get('/questions/:id', async (req, res) => {
   try {
-    const characterData = await Character.findAll({
-      include: [
-        {
-          model: User,
-          attributes: ['name'],
-        },
-      ],
+    const question = await Question.findByPk(req.params.id, {
+        include: [Answer]
     });
-
-
-    const characters = characterData.map((character) => character.get({ plain: true }));
-
-
-    res.render('homepage', { 
-      characters, 
-      logged_in: req.session.logged_in 
+    const rawQuestion = JSON.parse(JSON.stringify(question));
+    res.render('questions', {
+      ...rawQuestion,
+      loggedIn: req.session.logged_in,
     });
   } catch (err) {
-    res.status(500).json(err);
+    console.log(err);
+    // res.status(500).json(err);
   }
 });
 
-router.get('/character/:id', async (req, res) => {
-  try {
-    const characterData = await Character.findByPk(req.params.id, {
-      include: [
-        {
-          model: User,
-          attributes: ['name'],
-        },
-      ],
-    });
-
-    const character = characterData.get({ plain: true });
-
-    res.render('character', {
-      ...character,
-      logged_in: req.session.logged_in
-    });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
-
-router.get('/profile', withAuth, async (req, res) => {
-  try {
-    const userData = await User.findByPk(req.session.user_id, {
-      attributes: { exclude: ['password'] },
-      include: [{ model: Character }],
-    });
-
-    const user = userData.get({ plain: true });
-
-    res.render('profile', {
-      ...user,
-      logged_in: true
-    });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
-router.get('/login', (req, res) => {
-  if (req.session.logged_in) {
-    res.redirect('/profile');
-    return;
-  }
-
-  res.render('login');
-});
 
 module.exports = router;

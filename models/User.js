@@ -19,6 +19,9 @@ User.init(
     user: {
       type: DataTypes.STRING,
       allowNull: false,
+      validate: {
+        notEmpty: true
+      }
     },
     password: {
       type: DataTypes.STRING,
@@ -27,14 +30,14 @@ User.init(
         len: [8],
       },
     },
-    last_saved_result: {
-        type: DataTypes.INTEGER,
-        allowNull: true
-        // references: {
-        //     model: "character",
-        //     key: "id",
-        // },
-    },
+  //  fk_user_character_id: {
+  //       type: DataTypes.INTEGER,
+  //       allowNull: true
+  //       // references: {
+  //       //     model: "character",
+  //       //     key: "id",
+  //       // },
+  //   },
   },
   {
     hooks: {
