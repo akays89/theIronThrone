@@ -1,11 +1,11 @@
 <div class="card" style="width: 100%;">
-    <img src="{{quest_img}}" class="card-img-top w-10 h-10" alt="image" style="margin: auto; width:550px; height:306px;">
+    <img src="{{quest_img}}" class="card-img-top" alt="image" style="margin: auto; max-width:550px; max-height:306px;">
     <div class="card-body">
         <p class="card-text">{{question}}</p>
     </div>
-    <div class="has-text-left mb-3" id="radio-questions">
+    <div class="mb-3" id="radio-questions">
     {{#each answers}}
-        <div class="form-check">
+        <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="flexRadioDefault" id={{response.id}}>
             <label class="form-check-label" for="flexRadioDefault1">
                 {{answer}}
