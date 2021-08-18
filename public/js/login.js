@@ -21,10 +21,12 @@ const formHandler = async (event) => {
     if (endpoint === "signup") {
       
       if ( response.ok ) {
-            document.location.replace('/');
+            document.location.reload();
           } else {
             alert(response.statusText);
-     };
+            
+          };
+          document.location.reload();
   }}};
 
 

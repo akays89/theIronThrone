@@ -32,7 +32,7 @@ router.get('/questions/:id', async (req, res) => {
 // write an if statement using event.submitter to capture the user and value of the form
 // and saves it to local storage as a string
 // TODO fix router post 'questions/1' route
-router.post('/questions/1', (req, res) => {
+router.post('/questions/:id', (req, res) => {
   const user = req.submitter.user
   const value = req.submitter.value
   const question = req.submitter.question.id

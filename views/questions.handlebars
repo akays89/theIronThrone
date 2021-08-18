@@ -15,6 +15,27 @@
     </div>
 </div>
 
+<script>
+    // add an event addEventListener to the radio buttons and pass their values when clicked
+    
+    document.querySelectorAll('input[type=radio]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            const value = radio.value;
+            //define user as the user id
+            user = User.user
+            localStorage.setItem.join(user, value.join(','));
+            try{
+            // get the next question using the question id post route
+            
+            document.reload();
+            }
+            catch(err){
+                console.log(err);
+            }
+        });
+    });
+ </script>   
+
 {{!-- 
     1. This may need to be `uestion.handlebars`. it will receive a single question form teh controlelr
     2. Client-side JS - listen for `document.querySelector("#radio-questions").addEventListener('change', e => 
