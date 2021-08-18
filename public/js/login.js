@@ -1,3 +1,7 @@
+document
+.querySelector('#login-form');
+
+
 const formHandler = async (event) => {
     event.preventDefault();
     // console.log("login click", event.submitter);
@@ -14,17 +18,15 @@ const formHandler = async (event) => {
       body: JSON.stringify({ user, password }),
       headers: { 'Content-Type': 'application/json' },
     });
-    // if (endpoint === "signup") {
+    if (endpoint === "signup") {
       
-    //   if ( response.ok ) {
-    //         document.location.replace('/');
-    //       } else {
-    //         alert(response.statusText);
-    //  };
-  }};
+      if ( response.ok ) {
+            document.location.replace('/');
+          } else {
+            alert(response.statusText);
+     };
+  }}};
 
-  document
-    .querySelector('#login-form')
-     .addEventListener('submit', formHandler);
-  
+
+  document.addEventListener('submit', formHandler);
 
