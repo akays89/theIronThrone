@@ -5,6 +5,7 @@ const homeRoutes = require('./homeRoutes');
 const questionRoutes = require('./questionRoutes');
 const answerRoutes = require('./answerRoutes');
 
+
 router.use('/', homeRoutes);
 router.use('/api', apiRoutes);
 router.use('/questions', questionRoutes);
