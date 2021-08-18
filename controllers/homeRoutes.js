@@ -75,20 +75,38 @@ router.post('/questions/:id', (req, res) => {
 }
 );
 
-
-router.get('/results', (req, res) => {
-try {
-  const user = user.id
-  const result = Result.findOne({ where: { user_id:user }})
-    console.log(result);  
-    res.render('results', {layout: 'main', include: [Character]})
-      //  loggedIn: req.session.logged_in;
-    } catch (err) {
-      console.log(err);
-      res.sendStatus(500)
-    }
+router.get('/results/:id', async (req, res) => {
+  try {
+    const characterRes = await Character.findByPk(req.params.id, {
+        // include: [Result]
+    });
+    const rawCharacter = JSON.parse(JSON.stringify(characterRes));
+    res.render('results', {
+      ...rawCharacter,
+      loggedIn: req.session.logged_in,
+    });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
   }
-)
+});
+
+router.get('/leaderboard', async (req, res) => {
+  try {
+    const result = await Result.findByPk(req.params.id, {
+        include: [Character, User]
+    });
+    const rawResult = JSON.parse(JSON.stringify(result));
+    res.render('leaderboard', {
+      ...rawResult,
+      loggedIn: req.session.logged_in,
+    });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
 
 
 
