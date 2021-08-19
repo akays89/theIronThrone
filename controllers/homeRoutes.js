@@ -1,5 +1,5 @@
 const { response } = require('express');
-const { User, Question, Answer, Result, Character } = require('../models');
+const { Question, Answer, Character, Result, User } = require('../models');
 //const withAuth = require('../utils/auth');
 //const questData = require('../seeds/questionsData.json');
 const { init } = require('../models/User');
@@ -93,10 +93,25 @@ router.get('/results/:id', async (req, res) => {
 
 router.get('/leaderboard', async (req, res) => {
   try {
-    const result = await Result.findByPk(req.params.id, {
-        include: [Character, User]
+    const result = await Result.findAll({
+        attributes: [
+          'user_id',
+          'result_char',
+          'character_id',
+        ],
+        include: [
+          {
+            model: User,
+            attributes: ['user']
+          },
+          {
+            model: Character,
+            as: 'Current',
+            attributes: ['char_name']
+          }
+        ]
     });
-    const rawResult = JSON.parse(JSON.stringify(result));
+    const rawResult = await JSON.parse(JSON.stringify(result));
     res.render('leaderboard', {
       ...rawResult,
       loggedIn: req.session.logged_in,
