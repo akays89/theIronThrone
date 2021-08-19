@@ -39,7 +39,7 @@ Run `npm run seed` to prepare the database
 This project is for any Game of Thrones fan who wants to expand on this fun quiz concept.
 
 
-* [Deployment](#Deployment)
+## Deployment
 ![login](https://github.com/akays89/theIronThrone/blob/dylan/public/images/logIn.PNG)
 ![liveQuestion1](https://github.com/akays89/theIronThrone/blob/dylan/public/images/question1.PNG)
 ![result3](https://github.com/akays89/theIronThrone/blob/dylan/public/images/leaderboard.png)
