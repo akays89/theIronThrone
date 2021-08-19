@@ -19,16 +19,25 @@
         radio_questions.addEventListener('click', (e) => {
             const value = e.target.value;
             const qid = e.target.getAttribute('ident');
-            localStorage.setItem(`${qid}`, value);
+            
+            localStorage.setItem(`${qid}`, JSON.stringify(value));
             if( qid < 6 ) {
                 var url = parseInt(qid) + 1;
                 window.location.assign(`./${url}`);
             
             } else {
-                console.log(qid);
-            window.location.assign(`./results`);
+                const list = [];
+                for (i = 1; i < 7; i++) {
+                list.push(JSON.parse((localStorage.getItem(i))));
+                }
+                //const winner = list.reduce((a, v) => {(a[v] ? a[v] += 1 : 1, 0); return a;}, {});
+            console.log(list);
+            //console.log(winner);
+            //    console.log(list);
+            //window.location.assign(`./results`);
+            //localStorage.clear();
             }
-        });
+        });   
     
 </script>   
 </div>
