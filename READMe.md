@@ -12,7 +12,7 @@
 
 ## Description
 The Iron Throne is a Game of Thrones personality quiz that pairs the user with a character from the series, your result will be shared with all other logged users to discover your allies. 
-![Result3](https://github.com/akays89/theIronThrone/blob/dylan/public/images/result3.PNG)
+![Result3](https://github.com/akays89/theIronThrone/blob/master/public/images/result3.PNG)
 
 
 ## Installation
@@ -40,9 +40,9 @@ This project is for any Game of Thrones fan who wants to expand on this fun quiz
 
 
 ## Deployment
-![login](https://github.com/akays89/theIronThrone/blob/dylan/public/images/logIn.PNG)
-![liveQuestion1](https://github.com/akays89/theIronThrone/blob/dylan/public/images/question1.PNG)
-![result3](https://github.com/akays89/theIronThrone/blob/dylan/public/images/leaderboard.png)
+![login](https://github.com/akays89/theIronThrone/blob/master/public/images/logIn.PNG)
+![liveQuestion1](https://github.com/akays89/theIronThrone/blob/master/public/images/question1.PNG)
+![result3](https://github.com/akays89/theIronThrone/blob/master/public/images/leaderboard.png)
 
 
 ## Contact
