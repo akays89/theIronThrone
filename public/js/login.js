@@ -18,6 +18,7 @@ const formHandler = async (event) => {
       body: JSON.stringify({ user, password }),
       headers: { 'Content-Type': 'application/json' },
     });
+    document.location.replace("/");
     if (endpoint === "signUp") {
       
       if ( response.ok ) {
