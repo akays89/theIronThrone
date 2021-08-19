@@ -17,17 +17,18 @@ const formHandler = async (event) => {
       method: 'POST',
       body: JSON.stringify({ user, password }),
       headers: { 'Content-Type': 'application/json' },
+      
     });
     document.location.replace("/");
     if (endpoint === "signUp") {
       
       if ( response.ok ) {
-            document.location.reload();
+            document.location.replace("/");
           } else {
             alert(response.statusText);
             
           };
-          document.location.reload();
+          document.location.replace("/");
   }}};
 
 

@@ -60,4 +60,9 @@ router.post('/logout', (req, res) => {
   }
 });
 
+// router.post('/results', async (req, res) => {
+//   try {
+//     const userData = await User.findOne({ where: { user: req.body.user } });
+
+
 module.exports = router;
