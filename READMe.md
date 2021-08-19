@@ -36,7 +36,7 @@ This project is for anyone who is a fan of the Game of Thrones series and wants 
 * [Deployment](#Deployment)
 ![login]()
 ![liveQuestion1]()
-![result3]()
+![result3](https://github.com/akays89/theIronThrone/blob/dylan/public/images/leaderboard.png)
 
 ## Contact
 Creator Contacts:
