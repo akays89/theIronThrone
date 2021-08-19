@@ -11,6 +11,11 @@ router.get('/', (req, res) => {
   res.render('blank', { loggedIn: req.session.logged_in});
   });
 
+  router.get('/questions/results', (req, res) => {
+    //Serves the body of the page aka "main.handlebars" 
+    res.render('next', { loggedIn: req.session.logged_in});
+    });
+
 // This route works! yay. 
 // I had to remove the withAuth for insomnia and put in async await. 
 router.get('/questions/:id', async (req, res) => {

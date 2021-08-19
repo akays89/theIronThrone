@@ -30,6 +30,7 @@
                 for (i = 1; i < 7; i++) {
                 list.push(JSON.parse((localStorage.getItem(i))));
                 }
+
             const testTally = list.reduce((tally, result) => {
             tally[result] = tally[result] ? tally[result] += 1 : 1
             return tally;
@@ -62,6 +63,7 @@
             
             //window.location.assign(`./results`);
             localStorage.clear();
+
             }
         });   
     
