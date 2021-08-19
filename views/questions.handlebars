@@ -30,12 +30,40 @@
                 for (i = 1; i < 7; i++) {
                 list.push(JSON.parse((localStorage.getItem(i))));
                 }
-                //const winner = list.reduce((a, v) => {(a[v] ? a[v] += 1 : 1, 0); return a;}, {});
-            console.log(list);
-            //console.log(winner);
-            //    console.log(list);
-            window.location.assign(`./results`);
-            //localStorage.clear();
+
+            const testTally = list.reduce((tally, result) => {
+            tally[result] = tally[result] ? tally[result] += 1 : 1
+            return tally;
+            }, {});
+            
+            // Sort the testTally Object so that the highest value is last
+            const sortedTally = Object.keys(testTally).sort((a, b) => testTally[b] - testTally[a]);
+            winner = sortedTally[0];
+            console.log(sortedTally[0]);
+            
+            switch(winner) {
+                case 'Cersei': 
+                    window.location.assign('../results/4.html');
+                    break;
+                case 'Jon':
+                    window.location.assign('../results/3.html');
+                    break;
+                case 'Daenerys':
+                    window.location.assign('../results/5.html');
+                    break;
+                case 'Hodor':
+                    window.location.assign('../results/6.html');
+                    break;
+                case 'Joffrey':
+                    window.location.assign('../results/1.html');
+                    break;
+                default:
+                    window.location.assign('../results/2.html');
+            };
+            
+            //window.location.assign(`./results`);
+            localStorage.clear();
+
             }
         });   
     
